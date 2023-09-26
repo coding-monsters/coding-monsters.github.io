@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './Typography.module.scss';
 
+import Layout from './components/Layout';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Notification from './components/Notification';
+import SplashScreen from './components/SplashScreen';
+import ContentBlock from './components/ContentBlock';
 function App() {
   return (
     <div className="App">
-      <h1>Coding Monsters</h1>
-      <div class="container"><img src="logo.png" width="300"/></div>
+
+      <Header />
+      <ContentBlock />
+      <Footer />
     </div>
   );
 }
