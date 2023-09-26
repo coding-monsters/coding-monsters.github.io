@@ -8,7 +8,7 @@ import SplashScreen from './components/SplashScreen';
 import ContentBlock from './components/ContentBlock';
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{overflow: "hidden"}}>
 
       <Header />
       <ContentBlock />
