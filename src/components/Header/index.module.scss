@@ -11,7 +11,8 @@
     padding-top:4vw;
     padding-left: 4vw;
     margin-left: 10px;
-    background: #E4E4E4;
+   // background: #E4E4E4;
+   background-color: #feef67;
     border-top-left-radius: 10px;
     svg {
         text-align: center;
@@ -25,7 +26,8 @@
 }
 
 .menu {
-    background: #E4E4E4;
+   // background: #E4E4E4;
+    background-color: #feef67;
     grid-column: span 19;
     border-top-right-radius: 10px;
     font-family: 'Lato';
@@ -77,8 +79,8 @@ display: grid;
     padding-right:8vw;
     padding-top: 8vw;
     padding-bottom: 16vw;
-    background: #E4E4E4;
-    //background: #12071f;
+    //background: #E4E4E4;
+    background: #feef67;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin-left: 10px;
     margin-right: 10px;
