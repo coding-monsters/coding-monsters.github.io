@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[329],{1567:function(e,t,a){a.r(t),a.d(t,{default:function(){return u}});a(2791);var n=a(5878),c=a(253),r=a(8785),s=a.p+"static/media/scene.06ebd700ddad4b07158c.glb",d=a(184);function u(){var e=new r._;e.setDecoderPath("./draco-gltf"),c.E.setDRACOLoader(e);var t=(0,n.U2)(c.E,s).scene;return(0,d.jsx)("primitive",{object:t,dispose:null})}}}]);
+//# sourceMappingURL=329.f0b914ae.chunk.js.map
