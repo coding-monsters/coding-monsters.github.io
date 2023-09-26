@@ -159,3 +159,14 @@ a.btn:focus {
     height: 800px;
     top:0;
 }
+
+.spacebg {
+    position: absolute;
+    top:0;
+    right: -16vw;
+    width: 100vw;
+    height: 740px;
+    overflow: hidden;
+    canvas {
+    }
+}

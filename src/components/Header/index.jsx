@@ -28,7 +28,8 @@ function Stars(props) {
 const Header = ({ ...props }) => {
 
 	return (
-        <div className={styles.header}>
+    <>
+     <div className={styles.header}>
 
        
 		<div className={layout.grid_container_25}>
@@ -71,8 +72,7 @@ const Header = ({ ...props }) => {
                 <div><img src="generation.png" width="660"/></div>
                 <p><a href="" className={styles.btn}>Read more about us</a></p>
 
-<div className={styles.stars}>
-                <Space /></div>
+
             </div>
 
 
@@ -85,6 +85,11 @@ const Header = ({ ...props }) => {
            
 		</div>
         </div>
+        <div className={styles.spacebg + ' ' +layout.grid_container_25}>
+        
+          <div className={layout.grid_col_full_width}><Space /></div>
+        </div>
+        </>
         );
 };
 
