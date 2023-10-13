@@ -45,10 +45,10 @@ const Header = ({ ...props }) => {
 			<div className={styles.menu + ' ' + layout.grid_col_lg_3of4}>
       <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About us</a></li> 
-                <li><a href="/services">Services</a></li> 
-                <li><a href="/learn-coding">Learn Coding</a></li> 
-                <li><a href="/contact-us">Contact us</a></li>                                                    
+                <li><a href="#/about">About us</a></li> 
+                <li><a href="#/services">Services</a></li> 
+                <li><a href="#/learn-coding">Learn Coding</a></li> 
+                <li><a href="#/contact-us">Contact us</a></li>                                                    
 				</ul>
 			
 			
