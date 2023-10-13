@@ -11,7 +11,7 @@ import Error404 from './pages/404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={"/"}>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
