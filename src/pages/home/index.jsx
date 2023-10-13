@@ -7,6 +7,7 @@ import Notification from '../../components/Notification';
 import SplashScreen from '../../components/SplashScreen';
 import ContentBlock from '../../components/ContentBlock';
 import Office from '../../components/Office';
+import Partnerships from '../../components/Partnerships';
 
 const Home = ({ ...props }) => {
 	return (
@@ -14,6 +15,7 @@ const Home = ({ ...props }) => {
             <Header />
             <ContentBlock />
             <Office />
+            <Partnerships />
             <Footer />
         </>
         );

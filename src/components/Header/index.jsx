@@ -66,7 +66,7 @@ const Header = ({ ...props }) => {
           
       <div className={styles.banner + ' ' + layout.grid_col_full_width}>
                 <div><img src="helping-the-next.png" width="568"/></div>
-                <div><img src="generation.png" width="660"/></div>
+                <div><img src="takeoff.png" width="700" className={styles.takeoff}/></div>
                 <p><a href="" className={styles.btn}>Read more about us</a></p>
 
 
@@ -85,6 +85,8 @@ const Header = ({ ...props }) => {
         
           <div className={layout.grid_col_full_width}><Space /></div>
         </div>
+
+        
         </>
         );
 };

@@ -109,7 +109,7 @@ padding-right: 2vw;
     padding-left:8vw;
     padding-right:8vw;
     padding-top: 8vw;
-    padding-bottom: 16vw;
+    padding-bottom: 14vw;
     //background: #E4E4E4;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin-left: 10px;
@@ -236,7 +236,7 @@ a.btn:focus {
         top: 0;
         right: -13vw;
         width: 90vw;
-        height: 902px;
+        height: 924px;
         overflow: hidden;
     
         canvas {
@@ -287,6 +287,10 @@ a.btn:focus {
         img {
             width: 568px;
         }
+
+        .takeoff {
+            width: 700px;
+        }
     }
 
     .spacebg {
@@ -295,7 +299,7 @@ a.btn:focus {
         top: 0;
         right: -13vw;
         width: 90vw;
-        height: 902px;
+        height: 924px;
         overflow: hidden;
     
         canvas {
@@ -346,6 +350,10 @@ a.btn:focus {
         img {
             width:568px;
         }
+
+        .takeoff {
+            width: 700px;
+        }
     }
 
     .spacebg {
@@ -354,7 +362,7 @@ a.btn:focus {
         top: 0;
         right: -13vw;
         width: 90vw;
-        height: 902px;
+        height: 925px;
         overflow: hidden;
     
         canvas {

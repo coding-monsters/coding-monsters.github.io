@@ -7,7 +7,11 @@ const ContentBlock = ({ ...props }) => {
 	// console.log('props', props)
 	return (
 		<div className={styles.content + ' ' + layout.grid_container_25}>
-       
+      
+		<div className={layout.grid_col_full_width}>
+		<img src="photos.png" width="100%"/>
+		</div>
+		
 	   <div className={layout.grid_col_lg_full_inner}>
 			<h2 className={styles.heading}>services</h2>
 
@@ -15,23 +19,23 @@ const ContentBlock = ({ ...props }) => {
 
 			<div className={layout.grid_col_lg_1of3}>
 
-			<img src="https://placehold.co/600x400/EEE/31343C" width="100%"/>
+			<img src="design.png" width="100%"/>
 			<h2>Design</h2>
-			<p>First package manager built specifically around workspaces, Yarn lets you split your project into sub-components.</p>
+			<p>At Coding Monsters, we're all about turning your ideas into captivating visuals. Whether it's a logo that leaves an impression, a user-friendly website, or striking graphics, we're here to bring your vision to life. </p>
 			</div>
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
 			
-			<img src="https://placehold.co/600x400/EEE/31343C" width="100%"/>
+			<img src="dev.png" width="100%"/>
 			<h2>Web Development</h2>
-            <p>Yarn guarantees that installs that work today will keep working the same way in the future.</p>
+            <p>We craft user-friendly, visually appealing websites that stand out. With a team with over 20 years experience developing and building websites and mobile apps.</p>
 			
 			</div>
 			
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
 			
-			<img src="https://placehold.co/600x400/EEE/31343C" width="100%"/>
+			<img src="lessons.png" width="100%"/>
 			<h2>Coding Lessons</h2>
-            <p>Special care is put into our documentation, which we keep improving at every new version.</p>
+            <p>We turn learning to code into a thrilling adventure! We have lessons for different age groups from 8 years old onwards.</p>
 			
 			</div>
 
@@ -42,32 +46,32 @@ const ContentBlock = ({ ...props }) => {
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
 			
 			<img src="https://placehold.co/316x434/F8F8F8/F8F8F8" width="100%"/>
-			<h2>Branding</h2>
-            <p>Special care is put into our documentation, which we keep improving at every new version.</p>
+			<h2 className={styles.smlHeading}>Join the team</h2>
+            <p className={styles.bigHeading}>Are you passionate about teaching and supporting people entering the tech industry?</p>
+			<p><a href="mailto:xinchao@codingmonsters.com" className={styles.btn}>Contact us today!</a></p>
+			</div>
+
+			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
+			
+			<img src="https://placehold.co/316x434/F2F2F2/F2F2F2" width="100%"/>
+			<h2>Hien - Co-Founder</h2>
+            <p>Extensive background in hospitality management, complemented by a business marketing degree and ownership of a successful beauty clinic company.</p>
+			
+			</div>
+
+			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
+			
+			<img src="matt.png" width="100%"/>
+			<h2>Matt - Co-Founder</h2>
+            <p>Nineteen years of expertise in software development, e-learning, and design, including pivotal roles at EY (Ernst & Young), where he contributed to a global e-learning platform, and leadership experience managing a team of developers at The University of the Arts London.</p>
 			
 			</div>
 
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
 			
 			<img src="https://placehold.co/316x434/F2F2F2/F2F2F2" width="100%"/>
-			<h2>Hien</h2>
-            <p>Special care is put into our documentation, which we keep improving at every new version.</p>
-			
-			</div>
-
-			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
-			
-			<img src="https://placehold.co/316x434/F2F2F2/F2F2F2" width="100%"/>
-			<h2>Matt</h2>
-            <p>Special care is put into our documentation, which we keep improving at every new version.</p>
-			
-			</div>
-
-			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
-			
-			<img src="https://placehold.co/316x434/F2F2F2/F2F2F2" width="100%"/>
-			<h2>Tuan</h2>
-            <p>Special care is put into our documentation, which we keep improving at every new version.</p>
+			<h2>Tuan - Teacher / Developer</h2>
+            <p>A versatile professional with a rich background as a teacher and developer, specializing in working with children. Currently, he's actively expanding his development skills.</p>
 			
 			</div>
 
