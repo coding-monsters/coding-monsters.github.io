@@ -11,7 +11,7 @@
         font-size: 54px;
      }
 
-     img {
+     .face {
         width:60%;
      }
 }
@@ -20,3 +20,55 @@
 body {
     background: #FEEF67;
 }
+
+.faceContainer {
+    position: relative;
+}
+
+.eye1 {
+    position: absolute;
+    top: 50%;
+    left:53%;
+    width: 70px;
+    animation: mymove1 5s infinite;
+}
+
+.eye2 {
+    position: absolute;
+    top: 50%;
+    left:40%;
+    width: 70px;
+    animation: mymove2 5s infinite;
+}
+
+@keyframes mymove2 {
+   
+    from {
+        left: 40%;
+      }
+    
+      75% {
+        left: 44%;
+      }
+    
+      to {
+        left: 40%;
+      }
+
+  }
+
+  @keyframes mymove1 {
+   
+    from {
+        left: 53%;
+      }
+    
+      75% {
+        left: 56%;
+      }
+    
+      to {
+        left: 53%;
+      }
+
+  }
