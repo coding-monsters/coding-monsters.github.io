@@ -48,7 +48,7 @@ const Space = ({ ...props }) => {
         <Stars radius={500} depth={50} count={1000} factor={10} />
       </Canvas>
       <div className={styles.layer} />
-      <Loader />
+    
      
     </>
   )
