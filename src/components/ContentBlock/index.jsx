@@ -45,7 +45,7 @@ const ContentBlock = ({ ...props }) => {
 			</div>
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
 			
-			<img src="https://placehold.co/316x434/F8F8F8/F8F8F8" width="100%"/>
+			
 			<h2 className={styles.smlHeading}>Join the team</h2>
             <p className={styles.bigHeading}>Are you passionate about teaching and supporting people entering the tech industry?</p>
 			<p><a href="mailto:xinchao@codingmonsters.com" className={styles.btn}>Contact us today!</a></p>
@@ -53,7 +53,7 @@ const ContentBlock = ({ ...props }) => {
 
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
 			
-			<img src="https://placehold.co/316x434/F2F2F2/F2F2F2" width="100%"/>
+			<img src="hien.png" width="100%"/>
 			<h2>Hien - Co-Founder</h2>
             <p>Extensive background in hospitality management, complemented by a business marketing degree and ownership of a successful beauty clinic company.</p>
 			
