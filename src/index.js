@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import './Typography.module.scss';
 import Home from './pages/home';
 import About from './pages/about';
+import Learning from './pages/learning';
+import Contact from './pages/contact';
+import Services from './pages/services';
+
 import Terms from './pages/home';
 import Error404 from './pages/404';
 
@@ -16,9 +20,9 @@ root.render(
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="services" element={<Terms />} />
-          <Route path="learn-coding" element={<Terms />} />
-          <Route path="contact-us" element={<Terms />} />
+          <Route path="services" element={<Services />} />
+          <Route path="learn-coding" element={<Learning />} />
+          <Route path="contact-us" element={<Contact />} />
           <Route path="blog/helping-the-next-generation" element={<Terms />} />
           <Route path="terms" element={<Terms />} />
           <Route path="*" element={<Error404 />} />
