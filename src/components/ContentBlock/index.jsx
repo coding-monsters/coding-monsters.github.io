@@ -39,6 +39,20 @@ const ContentBlock = ({ ...props }) => {
 			
 			</div>
 
+
+			<div className={layout.grid_col_lg_full_inner}>
+			<p className={styles.services}>
+				
+				<span>Web Design</span>
+				<span>Brand Identity</span>
+				<span>Wordpress Development</span>
+				<span>React Native Mobile Apps</span>
+			</p>
+
+			</div>
+
+
+
 			<div className={layout.grid_col_lg_full_inner}>
 			<h2 className={styles.heading}>our talented team</h2>
 
@@ -69,7 +83,7 @@ const ContentBlock = ({ ...props }) => {
 
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of4}>
 			
-			<img src="https://placehold.co/316x434/F2F2F2/F2F2F2" width="100%"/>
+			<img src="tuan.png" width="100%"/>
 			<h2>Tuan - Teacher / Developer</h2>
             <p>A versatile professional with a rich background as a teacher and developer, specializing in working with children. Currently, he's actively expanding his development skills.</p>
 			

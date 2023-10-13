@@ -20,7 +20,7 @@ const Partnerships = ({ ...props }) => {
 
 			
 			<h2>Get in touch today!</h2>
-			<p><a href="">Contact us</a></p>
+			<p><a href="" className={styles.btn}>Contact us</a></p>
 			</div>
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
 			

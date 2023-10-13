@@ -1,6 +1,7 @@
 .content {
     background: #ffffff;
     padding-top:0vw;
+    padding-bottom: 4vw;
     p {
         font-size:20px;
         line-height: 34px;
@@ -42,5 +43,18 @@
         font-size:16px;
         margin-top:2vw;
         display: inline-block;
+    }
+
+    .services {
+        text-align:center;
+        margin-top:4vw;
+        span {
+            border: 1px solid #111;
+            color: #111;
+            padding:1vw;
+            border-radius: 100px;
+            font-size:16px;
+            margin-right:1vw;
+        }
     }
 }
