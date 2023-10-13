@@ -8,6 +8,11 @@ const ContentBlock = ({ ...props }) => {
 	return (
 		<div className={styles.content + ' ' + layout.grid_container_25}>
        
+	   <div className={layout.grid_col_lg_full_inner}>
+			<h2 className={styles.heading}>services</h2>
+
+			</div>
+
 			<div className={layout.grid_col_lg_1of3}>
 
 			<img src="https://placehold.co/600x400/EEE/31343C" width="100%"/>
@@ -17,7 +22,7 @@ const ContentBlock = ({ ...props }) => {
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
 			
 			<img src="https://placehold.co/600x400/EEE/31343C" width="100%"/>
-			<h2>Development</h2>
+			<h2>Web Development</h2>
             <p>Yarn guarantees that installs that work today will keep working the same way in the future.</p>
 			
 			</div>
@@ -25,7 +30,7 @@ const ContentBlock = ({ ...props }) => {
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
 			
 			<img src="https://placehold.co/600x400/EEE/31343C" width="100%"/>
-			<h2>Branding</h2>
+			<h2>Coding Lessons</h2>
             <p>Special care is put into our documentation, which we keep improving at every new version.</p>
 			
 			</div>

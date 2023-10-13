@@ -6,7 +6,8 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import model from './scene.gltf'
 export default function Model() {
 
-    const { scene } = useLoader(GLTFLoader, model);
+    const { scene, mesh } = useLoader(GLTFLoader, model);
+    console.log(mesh);
   return <primitive object={scene} dispose={null} />
 }
 

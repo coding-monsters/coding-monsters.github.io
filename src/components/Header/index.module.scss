@@ -1,19 +1,50 @@
 .header {
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-   
-    border-top-right-radius: 10px;
-    margin-top: 10px;
-    
+    /*background-color: #FEEF67;
+    background: url(../../../public/code.png);
+    background-repeat: no-repeat;
+  background-size: 100vw 100%;*/
 }
 
+.linecss {
+
+    background-color:transparent;
+    width:200px;
+    height:200px;
+    margin:20px auto;
+    border-left: 26px solid #000000;
+   
+   transform:rotate(224deg);
+    position: absolute;
+    top: -140px;
+    left:-140px;
+    }
+
+    .linecss2 {
+
+        background-color:transparent;
+        width:200px;
+        height:200px;
+        margin:20px auto;
+        border-left: 26px solid #000000;
+       
+       transform:rotate(224deg);
+        position: absolute;
+        top: -170px;
+        left:-170px;
+        }
+    
+
 .logo {
-    text-align: left;
+    text-align: center;
     padding-top:4vw;
     padding-left: 4vw;
-    margin-left: 10px;
+    padding-bottom: 4vw;
    // background: #E4E4E4;
-   background-color: #feef67;
-    border-top-left-radius: 10px;
+
     svg {
         text-align: center;
        
@@ -27,45 +58,45 @@
 
 .menu {
    // background: #E4E4E4;
-    background-color: #feef67;
-    grid-column: span 19;
-    border-top-right-radius: 10px;
+   grid-column: span 25;
+   padding: 0;
+    display: block;
     font-family: 'Lato';
-    margin-right: 10px;
+    text-align:center;
+    z-index: 88;
     ul {
         list-style: none;
     margin: 0;
     padding: 0px;
-    height: 66px;
-    padding-top: 4vw;
-    text-align: right;
-padding-right: 4vw;
-
-display: grid;
-    display: -ms-grid;
-    -ms-grid-columns: auto auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: start;
-    justify-content: end;
-    align-content: space-around;
-
+    line-height: 66px;
+    padding-top: 2vw;
+    text-align: center;
+padding-bottom: 2vw;
+display: block;
+   
+padding-left: 2vw;
+padding-right: 2vw;
     li {
-        display: inline;
-    padding-left: 1vw;
+        display: block;
+    padding-left: 0vw;
     font-size:16px;
     grid-column: span 1;
+    margin-bottom:2vw;
     a {
         text-decoration: none;
         color: #111111;
         border-radius: 100px;
         border: 1px solid #0A0A0A;
+      // border: 1px solid #ffffff;
         padding: 0.5vw 2vw 0.5vw 2vw;
+       display: block;
     }
 
     a:hover, a:focus {
         background: #111111;
         color: #ffffff;
+        //background: #ffffff;
+        //color: #000000;
         transition: opacity 1s;
     }
     }
@@ -80,12 +111,11 @@ display: grid;
     padding-top: 8vw;
     padding-bottom: 16vw;
     //background: #E4E4E4;
-    background: #feef67;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin-left: 10px;
     margin-right: 10px;
     display: block;
-
+    
    p {
    margin:0;
     padding:0;
@@ -93,6 +123,7 @@ display: grid;
 
    img {
     display: block;
+    width:100%;
    }
 
 }
@@ -128,7 +159,7 @@ display: grid;
 }
 
 .btn {
-    
+    z-index: 99;
     background: rgba(255,255,255, 0);
     border-radius: 100px;
     border: 2px solid #111111;
@@ -143,11 +174,13 @@ display: grid;
     transition: background-color 1s;
     margin-top:4vw;
     display: inline-block;
+   
 }
 
 a.btn:hover {
     background: rgba(0,0,0, 1);
     color: #ffffff;
+    z-index: 99;
 }
 
 a.btn:focus {
@@ -164,12 +197,177 @@ a.btn:focus {
 }
 
 .spacebg {
-    position: absolute;
-    top:0;
-    right: -16vw;
-    width: 100vw;
-    height: 740px;
-    overflow: hidden;
-    canvas {
+   
+    visibility:hidden;
+}
+
+.contacts {
+    text-align: right;
+    padding-right: 4vw;
+    ul {
+        li {
+            display: inline;
+            padding-left:2vw;
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+        }
     }
 }
+// Breakpoints
+//$break-mobile: 599px; // Mobile+
+//$break-tablet: 1007px; // Tablet
+//$break-desktop: 1440px; // Desktop
+//$break-ldesktop: 2000px; // Desktop+
+
+// G1
+
+
+  @media (min-width: 599px) and (max-width: 1007px) {
+    .header {
+       // background: green;
+        
+    }
+
+    .spacebg {
+        visibility:hidden;
+        position: absolute;
+        top: 0;
+        right: -13vw;
+        width: 90vw;
+        height: 902px;
+        overflow: hidden;
+    
+        canvas {
+        }
+    }
+
+    
+  }
+  @media (min-width: 1007px) and (max-width: 1440px) {
+    .header {
+       // background: yellow;
+    }
+
+    .menu {
+        grid-column: span 19;
+        text-align:right;
+        padding: 0;
+        padding-top:2vw;
+        ul {
+            height: 66px;
+            text-align:right;
+            display: inline-block;
+            padding-bottom:0;
+            padding-right: 4vw;
+            li {
+                padding-left: 1vw;
+                margin-bottom:0;
+                text-align:right;
+                display: inline;
+
+                a{
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .logo {
+        text-align: left;
+        padding-top:4vw;
+        padding-left: 4vw;
+        padding-bottom: 0vw;
+
+    }
+
+    .banner {
+
+        img {
+            width: 568px;
+        }
+    }
+
+    .spacebg {
+        visibility:visible;
+        position: absolute;
+        top: 0;
+        right: -13vw;
+        width: 90vw;
+        height: 902px;
+        overflow: hidden;
+    
+        canvas {
+        }
+    }
+
+  }
+@media (min-width: 1440px) {
+    .header {
+        //background: purple;
+    }
+
+    .menu {
+        grid-column: span 19;
+        text-align:right;
+        padding: 0;
+        padding-top:2vw;
+        
+        ul {
+            height: 66px;
+            text-align:right;
+            display: inline-block;
+            padding-bottom:0;
+            padding-right: 4vw;
+            li {
+                padding-left: 1vw;
+                margin-bottom:0;
+                text-align:right;
+                display: inline;
+
+                a{
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    .logo {
+        text-align: left;
+        padding-top:4vw;
+        padding-left: 4vw;
+        padding-bottom: 0vw;
+
+    }
+
+    .banner {
+
+        img {
+            width:568px;
+        }
+    }
+
+    .spacebg {
+        visibility:visible;
+        position: absolute;
+        top: 0;
+        right: -13vw;
+        width: 90vw;
+        height: 902px;
+        overflow: hidden;
+    
+        canvas {
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

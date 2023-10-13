@@ -33,12 +33,12 @@ const Space = ({ ...props }) => {
     <>
       <div className={styles.bg} />
    
-      <Canvas dpr={[1.5, 2]} linear shadows>
+      <Canvas dpr={[1.5, 2]} linear shadows onCreated={state => state.gl.setClearColor(0x000000, 0)}>
        
         
         
         <PerspectiveCamera makeDefault position={[10, 20, 16]} fov={45}>
-          <pointLight intensity={0.2} position={[-10, -25, -10]} />
+          <pointLight intensity={1} position={[-10, -25, -10]} />
           <spotLight castShadow intensity={4.25} angle={1.2} penumbra={1} position={[-25, 20, -15]} shadow-mapSize={[1024, 1024]} shadow-bias={-0.0001} />
         </PerspectiveCamera>
         <Suspense fallback={null}>

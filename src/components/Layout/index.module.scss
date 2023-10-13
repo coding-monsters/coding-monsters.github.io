@@ -240,3 +240,21 @@
       }
     }
   }
+
+
+
+    @media (min-width: 599px) and (max-width: 1007px) {
+    .header {
+        background: green;
+    }
+  }
+  @media (min-width: 1007px) and (max-width: 1440px) {
+    .header {
+        background: yellow;
+    }
+  }
+@media (min-width: 1440px) {
+    .header {
+        background: purple;
+    }
+}

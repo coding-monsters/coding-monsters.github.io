@@ -9,21 +9,7 @@ import styles from "./index.module.scss";
 
 
 
-function Stars(props) {
-    const ref = useRef()
-    const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }))
-    useFrame((state, delta) => {
-      ref.current.rotation.x -= delta / 10
-      ref.current.rotation.y -= delta / 15
-    })
-    return (
-      <group rotation={[0, 0, Math.PI / 4]}>
-        <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-          <PointMaterial transparent color="#111111" size={0.0007} sizeAttenuation={true} depthWrite={false} />
-        </Points>
-      </group>
-    )
-  }
+
 
 const Header = ({ ...props }) => {
 
@@ -33,9 +19,10 @@ const Header = ({ ...props }) => {
 
        
 		<div className={layout.grid_container_25}>
-        
+        <div className={styles.linecss}></div>
+        <div className={styles.linecss2}></div>
 			<div className={styles.logo + ' ' + layout.grid_col_lg_1of4}>
-                <div className={styles.lines}><img src="lines1.png" width="190"/></div>
+
             <h1>Coding Monsters</h1>
         <div><svg width="190" height="66" viewBox="0 0 190 66" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M22.5477 32.7706C26.4346 32.9818 28.378 34.1111 28.378 36.1585C28.378 38.1106 27.1533 39.9469 24.704 41.6674C22.2546 43.3548 19.0274 44.1985 15.0224 44.1985C11.0174 44.1985 7.74053 43.0074 5.19188 40.6252C2.67632 38.2099 1.41855 35.0501 1.41855 31.146C1.41855 25.8522 3.23901 21.5344 6.87995 18.1927C10.5209 14.851 15.1051 13.1801 20.6327 13.1801C23.4793 13.1801 25.7301 13.7261 27.385 14.8179C29.04 15.8767 29.8675 17.2167 29.8675 18.8379C29.8675 20.4591 29.3048 21.6998 28.1794 22.5601C27.0871 23.4203 25.879 23.8505 24.555 23.8505C23.2641 23.8505 22.0726 23.503 20.9803 22.8082C19.9211 22.1134 19.0936 21.1043 18.4978 19.7808C18.3083 19.8591 18.1222 19.9427 17.9398 20.0319C17.6965 20.1507 17.4597 20.2793 17.2291 20.4175C15.7299 21.3165 14.4979 22.6262 13.5329 24.3467C12.3413 26.5304 11.7456 28.7141 11.7456 30.8978C11.7456 33.0815 12.1759 34.8516 13.0364 36.2082C13.897 37.5647 15.0224 38.243 16.4126 38.243C17.8027 38.243 18.9281 37.7798 19.7887 36.8533C20.6824 35.9269 21.1292 34.5539 21.1292 32.7341C21.6278 32.7341 22.1006 32.7463 22.5477 32.7706ZM14.7743 25.033C13.6831 27.0352 13.1641 28.985 13.1641 30.8978C13.1641 32.9062 13.561 34.3872 14.2344 35.4488C14.8824 36.4703 15.5909 36.825 16.4126 36.825C17.4518 36.825 18.1853 36.4956 18.7492 35.8885L18.7583 35.8787L18.7676 35.8691C19.3169 35.2996 19.7107 34.3395 19.7107 32.7341V31.3161H21.1292C23.6122 31.3161 25.6776 31.6022 27.1719 32.3082C27.9377 32.67 28.6073 33.1672 29.0842 33.8431C29.5702 34.5318 29.7965 35.3227 29.7965 36.1585C29.7965 38.7796 28.1375 40.9886 25.5196 42.8276L25.5143 42.8313L25.509 42.835C22.7535 44.7332 19.2173 45.6165 15.0224 45.6165C10.7147 45.6165 7.07339 44.3251 4.22302 41.6609L4.21607 41.6544L4.20921 41.6478C1.38051 38.9319 0 35.3853 0 31.146C0 25.4869 1.96436 20.7793 5.92054 17.1482C9.8548 13.5373 14.7952 11.7622 20.6327 11.7622C23.6375 11.7622 26.1919 12.3349 28.1581 13.629C30.116 14.8844 31.286 16.6291 31.286 18.8379C31.286 20.8245 30.574 22.5106 29.0494 23.6801C27.7224 24.7227 26.211 25.2684 24.555 25.2684C22.9935 25.2684 21.5379 24.8437 20.2187 24.0045L20.2103 23.9992L20.202 23.9937C19.2816 23.39 18.5202 22.6049 17.9096 21.6633C16.663 22.4232 15.6174 23.5321 14.7743 25.033Z" fill="black"/>
@@ -56,8 +43,7 @@ const Header = ({ ...props }) => {
 			
 			</div>
 			<div className={styles.menu + ' ' + layout.grid_col_lg_3of4}>
-
-				<ul>
+      <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About us</a></li> 
                 <li><a href="">Services</a></li> 
@@ -65,16 +51,26 @@ const Header = ({ ...props }) => {
                 <li><a href="">Contact us</a></li>                                                    
 				</ul>
 			
+			
+			</div>
+
+      <div className={styles.contacts + ' ' + layout.grid_col_full_width}>
+      <ul>
+                <li><a href="tel:+84795508810">(+84) 795 508 810</a></li>
+                <li><a href="mailto:xinchao@codingmonsters.com">xinchao@codingmonsters.com</a></li>                                                 
+				</ul>
+			
+			
 			</div>
 			
-            <div className={styles.banner + ' ' + layout.grid_col_full_width}>
+          
+      <div className={styles.banner + ' ' + layout.grid_col_full_width}>
                 <div><img src="helping-the-next.png" width="568"/></div>
                 <div><img src="generation.png" width="660"/></div>
                 <p><a href="" className={styles.btn}>Read more about us</a></p>
 
 
             </div>
-
 
             
      
