@@ -9,9 +9,17 @@ import styles from "./index.module.scss";
 
 const Navigation = ({ ...props }) => {
 
+    var backgroundStyle = "";
+    if(props.colour==="white") {
+        backgroundStyle = styles.header;
+        
+    } else {
+        backgroundStyle = styles.headerPurple;
+       
+    }
 	return (
     <>
-     <div className={styles.header}>
+     <div className={backgroundStyle}>
 
        
 		<div className={layout.grid_container_25}>
@@ -79,10 +87,11 @@ const Navigation = ({ ...props }) => {
 };
 
 Navigation.propTypes = {
+    colour: PropTypes.string
 };
 
 Navigation.defaultProps = {
-	// nothing
+	colour: "white"
 };
 
 export default Navigation;

@@ -5,15 +5,20 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Notification from '../../components/Notification';
 import SplashScreen from '../../components/SplashScreen';
-import Services from '../../components/Services';
+import Learning from '../../components/Learning';
 import Office from '../../components/Office';
 import Partnerships from '../../components/Partnerships';
 
 const LearningPage = ({ ...props }) => {
+
+    
+    document.title = "Learn Coding - Coding Monsters — www.codingmonsters.com";
+    
+    
 	return (
 		<>
-            <Navigation />
-            <Services />
+            <Navigation colour={ "purple" }/>
+            <Learning />
             <Footer />
         </>
         );

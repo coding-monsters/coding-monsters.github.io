@@ -6,6 +6,8 @@ import Footer from '../../components/Footer';
 import GoogleMap from '../../components/GoogleMap';
 
 const ContactPage = ({ ...props }) => {
+
+    document.title = "Contact us - Coding Monsters — www.codingmonsters.com";
 	return (
 		<>
             <Navigation />

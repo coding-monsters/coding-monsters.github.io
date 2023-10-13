@@ -10,6 +10,9 @@ import Office from '../../components/Office';
 import Partnerships from '../../components/Partnerships';
 
 const ServicesPage = ({ ...props }) => {
+
+    document.title = "Our services - Coding Monsters — www.codingmonsters.com";
+
 	return (
 		<>
             <Navigation />
