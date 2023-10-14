@@ -44,7 +44,7 @@ const GoogleMap = ({ ...props }) => {
 		<div className={styles.map + ' ' + layout.grid_col_lg_2of3}>
 	
         <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyC-3saqYuCFoW0F3BdAVAMVCja5Rz_g3_8' }}
+        bootstrapURLKeys={{ key: '' }}
         defaultCenter={location}
         defaultZoom={zoomLevel}
       >
