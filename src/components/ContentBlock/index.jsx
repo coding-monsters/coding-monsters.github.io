@@ -45,8 +45,10 @@ const ContentBlock = ({ ...props }) => {
 				
 				<span>Web Design</span>
 				<span>Brand Identity</span>
-				<span>Wordpress Development</span>
+				<span>Web Development</span>
 				<span>React Native Mobile Apps</span>
+				<span>Web Accessibility Audits</span>
+				<span>React Development</span>
 			</p>
 
 			</div>
