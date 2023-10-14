@@ -9,8 +9,11 @@ import About from './pages/about';
 import Learning from './pages/learning';
 import Contact from './pages/contact';
 import Services from './pages/services';
-
-import Terms from './pages/home';
+import Blog14102023 from './pages/blog/helping-the-next-generation';
+import Terms from './pages/terms';
+import Privacy from './pages/privacy';
+import Accessibility from './pages/accessibility';
+import Cookies from './pages/cookies';
 import Error404 from './pages/404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,8 +26,11 @@ root.render(
           <Route path="services" element={<Services />} />
           <Route path="learn-coding" element={<Learning />} />
           <Route path="contact-us" element={<Contact />} />
-          <Route path="blog/helping-the-next-generation" element={<Terms />} />
-          <Route path="terms" element={<Terms />} />
+          <Route path="blog/helping-the-next-generation" element={<Blog14102023 />} />
+          <Route path="terms-of-use" element={<Terms />} />
+          <Route path="privacy-policy" element={<Privacy />} />
+          <Route path="accessibility" element={<Accessibility />} />
+          <Route path="cookies" element={<Cookies />} />
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>

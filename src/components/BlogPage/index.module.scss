@@ -1,0 +1,60 @@
+.content {
+    background: #ffffff;
+    padding-top:0vw;
+    padding-bottom: 4vw;
+    p {
+        font-size:20px;
+        line-height: 34px;
+        font-family: 'Lato';
+    }
+
+    .heading {
+        font-family: "Lemon";
+        font-size: 54px;
+        padding-top: 4vw;
+    }
+
+    .smlHeading {
+        font-family: "Lato";
+        font-size: 16px;
+       text-transform: capitalize;
+       color: #818181;
+    }
+
+    .bigHeading {
+        font-family: "Lato";
+        font-size: 28px;
+       text-transform: capitalize;
+       color: #111;
+    }
+
+    p {
+        padding:0;
+        margin:0;
+    }
+
+    .btn {
+        border: 1px solid #111;
+        color: #fff;
+        background-color: #111;
+        border-radius:100px;
+        padding:0.5vw;
+        text-decoration: none;
+        font-size:16px;
+        margin-top:2vw;
+        display: inline-block;
+    }
+
+    .services {
+        text-align:center;
+        margin-top:4vw;
+        span {
+            border: 1px solid #111;
+            color: #111;
+            padding:1vw;
+            border-radius: 100px;
+            font-size:16px;
+            margin-right:1vw;
+        }
+    }
+}

@@ -6,52 +6,47 @@ import styles from "./index.module.scss";
 const AboutUs = ({ ...props }) => {
 	// console.log('props', props)
 	return (
-		<div className={styles.content + ' ' + layout.grid_container_25}>
+		<>
+		<div className={styles.aboutus + ' ' + layout.grid_container_25}>
       
 		
 		
-	   <div className={layout.grid_col_lg_full_inner}>
-			<h2 className={styles.heading}>about us</h2>
+	   
 
+			<div className={layout.grid_col_lg_1of3}>
+			<h2 className={styles.heading}>about us</h2>
 			</div>
 
 			<div className={layout.grid_col_lg_1of3}>
+				<p>Hey there, we're not your average digital agency! At Coding Monsters, we're on a mission to turn young minds into tech superheroes. </p>
+			</div>
 
-			<img src="design.png" width="100%"/>
-			<h2>Design</h2>
-			<p>At Coding Monsters, we're all about turning your ideas into captivating visuals. Whether it's a logo that leaves an impression, a user-friendly website, or striking graphics, we're here to bring your vision to life. </p>
+			<div className={layout.grid_col_lg_1of3}>
+			<p>We teach anyone aged 8 and older, and we aim to offer job opportunities to our students, providing them with valuable work experience and a chance to begin their careers in the tech industry.</p>
+			<p>#DigitalAgency #WebDesign #CodingForKids #TechSuperheroes</p>
 			</div>
-			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
-			
-			<img src="dev.png" width="100%"/>
-			<h2>Web Development</h2>
-            <p>We craft user-friendly, visually appealing websites that stand out. With a team with over 20 years experience developing and building websites and mobile apps.</p>
-			
-			</div>
-			
-			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of3}>
-			
+
+		</div>
+		<div className={styles.aboutus + ' ' + layout.grid_container_25}>
+
+		<div className={layout.grid_col_lg_1of3}>
 			<img src="lessons.png" width="100%"/>
-			<h2>Coding Lessons</h2>
-            <p>We turn learning to code into a thrilling adventure! We have lessons for different age groups from 8 years old onwards.</p>
+			</div>
+			<div className={layout.grid_col_lg_2of3}>
+			<h3 className={styles.heading2}>why choose us?</h3>
+			<p>We're creating a system to teach students tech skills and help them get tech jobs. We have our own web agency that students can work for, learning from real client projects and earn money.</p>
+
+			<p>We'll hire more people from our student group as our company grows.</p>
+
+			<p>We plan to start small in our local area of Danang, and when we're ready, we'll expand.</p>
+			</div>
+
 			
-			</div>
+           
+		</div>
+		<div className={styles.aboutus + ' ' + layout.grid_container_25}>
 
-
-			<div className={layout.grid_col_lg_full_inner}>
-			<p className={styles.services}>
-				
-				<span>Web Design</span>
-				<span>Brand Identity</span>
-				<span>Wordpress Development</span>
-				<span>React Native Mobile Apps</span>
-			</p>
-
-			</div>
-
-
-
-			<div className={layout.grid_col_lg_full_inner}>
+		<div className={layout.grid_col_lg_full_inner}>
 			<h2 className={styles.heading}>our talented team</h2>
 
 			</div>
@@ -86,10 +81,8 @@ const AboutUs = ({ ...props }) => {
             <p>A versatile professional with a rich background as a teacher and developer, specializing in working with children. Currently, he's actively expanding his development skills.</p>
 			
 			</div>
-
-           
 		</div>
-
+		</>
         );
 };
 

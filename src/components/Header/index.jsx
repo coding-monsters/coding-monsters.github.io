@@ -67,7 +67,7 @@ const Header = ({ ...props }) => {
       <div className={styles.banner + ' ' + layout.grid_col_full_width}>
                 <div><img src="helping-the-next.png" width="568"/></div>
                 <div><img src="takeoff.png" width="700" className={styles.takeoff}/></div>
-                <p><a href="" className={styles.btn}>Read more about us</a></p>
+                <p><a href="#/blog/helping-the-next-generation" className={styles.btn}>Read more about us</a></p>
 
 
             </div>

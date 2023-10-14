@@ -22,7 +22,7 @@ const Footer = ({ ...props }) => {
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of2}>
 
 				<p>
-					<a href="">Privacy Policy</a> <a href="">Cookies</a> <a href="">Terms of use</a>
+					<a href="#/privacy-policy">Privacy Policy</a> <a href="#/cookies">Cookies</a> <a href="#/terms-of-use">Terms of use</a> <a href="#/accessibility">Accessibility</a>
 				</p>
 			
 			</div>
