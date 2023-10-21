@@ -17,7 +17,7 @@ const Footer = ({ ...props }) => {
 			<div className={layout.grid_col_lg_1of2}>
 
 			<p>&copy; 2023 Coding Monsters. All rights reserved.</p>
-			<p>Lorem ipsum blah blah blah </p>
+			<p>Helping the next generation</p>
 			</div>
 			<div className={styles.footerRight + ' ' + layout.grid_col_lg_1of2}>
 

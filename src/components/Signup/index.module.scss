@@ -1,0 +1,79 @@
+.aboutus {
+    background: #ffffff;
+    padding-top:4vw;
+    padding-bottom: 0vw;
+    p {
+        font-size:20px;
+        line-height: 34px;
+        font-family: 'Lato';
+        padding-bottom: 1vw;
+    }
+
+    .heading {
+        font-family: "Lemon";
+        font-size: 54px;
+        padding-top: 0vw;
+        padding-bottom: 4vw;
+        margin:0;
+    }
+
+    .heading2 {
+        font-family: "Lato";
+        font-size: 34px;
+        padding: 0vw;
+        margin:0;
+    }
+
+    .smlHeading {
+        font-family: "Lato";
+        font-size: 14px;
+       text-transform:uppercase;
+       color: #818181;
+    }
+
+    .bigHeading {
+        font-family: "Lato";
+        font-size: 32px;
+       color: #111;
+    }
+
+    
+
+    .btn {
+        border: 1px solid #111;
+        color: #fff;
+        background-color: #111;
+        border-radius:100px;
+        padding:0.5vw 2vw 0.5vw 2vw;
+        text-decoration: none;
+        font-size:16px;
+        margin-top:2vw;
+        display: inline-block;
+    }
+
+    a {
+        color: #010000;
+        text-decoration: none;
+        border-bottom: 1px solid #010000;
+    }
+
+    a:hover {
+        color: #010000;
+        text-decoration: none;
+        border-bottom: 0px solid #010000;
+    }
+
+    .services {
+        text-align:center;
+        margin-top:4vw;
+        span {
+            border: 1px solid #111;
+            color: #111;
+            padding:1vw;
+            border-radius: 100px;
+            font-size:16px;
+            margin-right:1vw;
+        }
+    }
+}
+

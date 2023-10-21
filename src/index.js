@@ -15,6 +15,7 @@ import Privacy from './pages/privacy';
 import Accessibility from './pages/accessibility';
 import Cookies from './pages/cookies';
 import Error404 from './pages/404';
+import Signup from './pages/signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,7 @@ root.render(
           <Route path="privacy-policy" element={<Privacy />} />
           <Route path="accessibility" element={<Accessibility />} />
           <Route path="cookies" element={<Cookies />} />
+          <Route path="sign-up-to-coding-monsters" element={<Signup />} />
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>

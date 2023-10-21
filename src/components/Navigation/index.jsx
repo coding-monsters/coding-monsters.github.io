@@ -17,6 +17,18 @@ const Navigation = ({ ...props }) => {
         backgroundStyle = styles.headerPurple;
        
     }
+    var menuStatus = true;
+
+    console.log(props.menu);
+    if(props.menu==true) {
+        menuStatus = true;
+        console.log("1");
+    } else {
+        menuStatus = false;
+        console.log("2");
+    }
+
+    console.log(menuStatus);
 	return (
     <>
      <div className={backgroundStyle}>
@@ -47,6 +59,8 @@ const Navigation = ({ ...props }) => {
 			
 			</div>
 			<div className={styles.menu + ' ' + layout.grid_col_lg_3of4}>
+
+            {menuStatus &&
       <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="#/about">About us</a></li> 
@@ -55,15 +69,15 @@ const Navigation = ({ ...props }) => {
                 <li><a href="#/contact-us">Contact us</a></li>                                                    
 				</ul>
 			
-			
+        }
 			</div>
 
       <div className={styles.contacts + ' ' + layout.grid_col_full_width}>
-      <ul>
+      {menuStatus &&<ul>
                 <li><a href="tel:+84795508810">(+84) 795 508 810</a></li>
                 <li><a href="mailto:xinchao@codingmonsters.com">xinchao@codingmonsters.com</a></li>                                                 
 				</ul>
-			
+			 }
 			
 			</div>
 			
@@ -87,11 +101,14 @@ const Navigation = ({ ...props }) => {
 };
 
 Navigation.propTypes = {
-    colour: PropTypes.string
+    colour: PropTypes.string,
+    menu: PropTypes.bool
+
 };
 
 Navigation.defaultProps = {
-	colour: "white"
+	colour: "white",
+    menu: true
 };
 
 export default Navigation;
