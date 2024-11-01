@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/2048-in-react",
-  output: "export",
+  basePath: "/",
+  output: 'export',
   reactStrictMode: true,
 };
 
