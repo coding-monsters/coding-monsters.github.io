@@ -1,10 +1,12 @@
-
+import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Inter } from 'next/font/google';
 
-// If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  const [randomImage, setRandomImage] = useState("");
+
   // Array of background images
   const backgroundImages = [
     "/image01.jpg",
@@ -13,8 +15,11 @@ export default function Home() {
     "/image04.jpg",
   ];
 
-  // Select a random background image on each refresh
-  const randomImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+  useEffect(() => {
+    // Select a random background image on the client side
+    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    setRandomImage(backgroundImages[randomIndex]);
+  }, []); // Run only once after the component mounts
 
   return (
     <main className={inter.className}>
