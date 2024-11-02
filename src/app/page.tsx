@@ -71,15 +71,15 @@ export default function Home() {
 
         {/* Right Column with Vertically Centered Content */}
         <div className="flex flex-col justify-center items-center md:items-start px-6 md:px-12 lg:px-24 py-8 md:py-0 bg-repeat-y" style={{ backgroundImage: `url('ruler.png')` }}>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug text-center md:text-left">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug text-center md:text-left pl-12">
             Coming<br /> Soon / <br />
             <span className="font-light">Coding<br /> Monsters</span>
           </h1>
-          <p className="mt-4 text-center md:text-left">New Website For 2025</p>
+          <p className="mt-4 text-center md:text-left pl-12">New Website For 2025</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-black min-h-28 bg-left bg-scroll bg-cover text-zinc-300 text-sm p-8 pb-16"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-black min-h-28 bg-left bg-scroll bg-cover text-zinc-300 text-sm p-8 pl-16 pb-16"
       style={{ backgroundImage: `url('footer.png')` }}>
         <div><p className="pb-2">&copy; 2024. Công ty TNHH Coding Monsters. MST 0402249325</p>
         <p >Made in Danang.   All Rights Reserved</p></div>
