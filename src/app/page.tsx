@@ -33,10 +33,10 @@ export default function Home() {
           {/* 10px Divider */}
           <div className="absolute top-0 right-0 h-full w-[10px] bg-white bg-opacity-5"></div>
 
-          {/* Overlay with Left-Aligned Logo and Centered Text */}
-          <div className="absolute inset-0 flex flex-col px-4 md:px-16 lg:px-32 text-white bg-black bg-opacity-30">
-            {/* Logo at the Top Left */}
-            <div className="flex items-start mt-4 md:mt-8 lg:mt-16">
+          {/* Overlay with Centered Logo and Centered Text */}
+          <div className="absolute inset-0 flex flex-col px-4 md:px-16 lg:px-32 text-white bg-black bg-opacity-0">
+            {/* Logo at the Top Center for Mobile, Top Left for Larger Screens */}
+            <div className="flex items-start justify-center md:justify-start mt-4 md:mt-8 lg:mt-16">
               <img src="/logo.png" alt="Logo" className="w-[150px] md:w-[187px] h-auto" />
             </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Right Column with Vertically Centered Content */}
-        <div className="flex flex-col justify-center items-start px-6 md:px-12 lg:px-24 py-8 md:py-0">
+        <div className="flex flex-col justify-center items-center md:items-start px-6 md:px-12 lg:px-24 py-8 md:py-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug text-center md:text-left">
             Coming<br /> Soon / <br />
             <span className="font-light">Coding<br /> Monsters</span>
