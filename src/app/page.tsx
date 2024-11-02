@@ -34,15 +34,15 @@ export default function Home() {
           <div className="absolute top-0 right-0 h-full w-[10px] bg-white bg-opacity-5"></div>
 
           {/* Overlay with Left-Aligned Logo and Centered Text */}
-          <div className="absolute inset-0 flex flex-col px-8 md:px-32 text-white bg-black bg-opacity-0">
+          <div className="absolute inset-0 flex flex-col px-4 md:px-16 lg:px-32 text-white bg-black bg-opacity-30">
             {/* Logo at the Top Left */}
-            <div className="flex items-start mt-8 md:mt-16">
-              <img src="/logo.png" alt="Logo" className="w-[187px] h-[65px]" />
+            <div className="flex items-start mt-4 md:mt-8 lg:mt-16">
+              <img src="/logo.png" alt="Logo" className="w-[150px] md:w-[187px] h-auto" />
             </div>
 
             {/* Centered Content Below Logo */}
             <div className="flex flex-col justify-center flex-grow">
-              <h2 className="text-4xl md:text-6xl font-semibold">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center md:text-left">
                 Helping people<br /> grow, <span className="font-light">while<br /> building<br /> amazing things.</span>
               </h2>
             </div>
@@ -50,12 +50,12 @@ export default function Home() {
         </div>
 
         {/* Right Column with Vertically Centered Content */}
-        <div className="flex flex-col justify-center items-start px-8 md:px-24 py-8 md:py-0">
-          <h1 className="text-4xl md:text-6xl font-semibold leading-snug">
+        <div className="flex flex-col justify-center items-start px-6 md:px-12 lg:px-24 py-8 md:py-0">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug text-center md:text-left">
             Coming<br /> Soon / <br />
             <span className="font-light">Coding<br /> Monsters</span>
           </h1>
-          <p className="mt-4">New Website For 2025</p>
+          <p className="mt-4 text-center md:text-left">New Website For 2025</p>
         </div>
       </div>
     </main>
