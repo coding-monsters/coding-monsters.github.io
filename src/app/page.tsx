@@ -43,7 +43,7 @@ export default function Home() {
             {/* Centered Content Below Logo */}
             <div className="flex flex-col justify-center flex-grow">
               <h2 className="text-4xl md:text-6xl font-semibold">
-                Helping people<br /> grow, <span className="font-light">while<br /> building amazing things.</span>
+                Helping people<br /> grow, <span className="font-light">while<br /> building<br /> amazing things.</span>
               </h2>
             </div>
           </div>
