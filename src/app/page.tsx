@@ -79,10 +79,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-black min-h-28 bg-left bg-scroll bg-cover text-zinc-300 text-sm p-8 pl-16 pb-16"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-black min-h-28 bg-left bg-scroll bg-cover text-zinc-300 text-sm p-8 pl-16"
       style={{ backgroundImage: `url('footer.png')` }}>
         <div><p className="pb-2">&copy; 2024. Công ty TNHH Coding Monsters. MST 0402249325</p>
-        <p >Made in Danang.   All Rights Reserved</p></div>
+        <p >Made in Danang.   All Rights Reserved.</p></div>
         <div></div>
       </div>
     </main>
